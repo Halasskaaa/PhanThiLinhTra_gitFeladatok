@@ -67,7 +67,10 @@ namespace git
 
         static void Main(string[] args)
         {
-            
+            int[] szamok = new int[10];
+
+            F01(szamok);
+            F05(szamok);
         }
     }
 }
