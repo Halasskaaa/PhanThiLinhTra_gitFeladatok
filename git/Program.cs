@@ -16,7 +16,6 @@ namespace git
                 szamok[i] = rnd.Next(1,51);
             }
         }
-
         public static int F02(int[] szamok)
         {
             int count = 0;
@@ -28,6 +27,16 @@ namespace git
                 }
             }
             return count;
+        }
+        public static double F03(int[] szamok)
+        {
+            double atlag = 0;
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                atlag += szamok[i];
+            }
+            atlag /= szamok.Length;
+            return atlag;
         }
 
         static void Main(string[] args)
