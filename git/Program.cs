@@ -51,6 +51,19 @@ namespace git
             }
             return paratlanok;
         }
+        public static void F05(int[] szamok)
+        {
+            Console.WriteLine($"Ennyi db pozitív szám van a tömbben: {F02(szamok)}");
+            Console.WriteLine($"A tömb elemeinek átlaga: {F03(szamok):0.####}");
+            Console.WriteLine("A tömbből alkotott páratlan számok: ");
+            int[] paratlanok = F04(szamok);
+
+            foreach (int szam in paratlanok)
+            {
+                Console.Write(szam + ", ");
+            }
+            Console.WriteLine();
+        }
 
         static void Main(string[] args)
         {
